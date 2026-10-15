@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-t="title_prod">Proizvodi · TTM Engines</title>
+<meta name="description" content="TTM Engines (TTM Strojna obrada d.o.o., Viškovo): strojna obrada dijelova motora, slaganje motora i motorsport savjetovanje. Preko 20 godina iskustva.">
+<meta name="theme-color" content="#0A2540">
+<meta property="og:title" content="TTM Engines">
+<meta property="og:description" content="Strojna obrada dijelova motora, slaganje motora i motorsport savjetovanje. Viškovo, Hrvatska.">
+<meta property="og:image" content="slike/hero.jpg">
+<link rel="icon" href="slike/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main" data-t="skip">Preskoči na sadržaj</a>
+
+<!-- ============ ZAGLAVLJE (isto na svim stranicama) ============ -->
+<header class="hdr" id="top">
+  <div class="hdr-in">
+    <a class="brand" href="index.html" aria-label="TTM Engines"><img src="slike/logo.jpg" alt="TTM Engines" width="198" height="92"></a>
+    <nav class="menu" id="menu" aria-label="Glavni izbornik">
+      <a href="index.html" data-t="nav_home">Početna</a>
+      <a href="strojevi.html" data-t="nav_machines">Strojevi</a>
+      <a href="usluge.html" data-t="nav_services">Usluge</a>
+      <a href="proizvodi.html" data-t="nav_products" class="on" aria-current="page">Proizvodi</a>
+      <a href="o-nama.html" data-t="nav_about">O nama</a>
+      <a href="kontakt.html" data-t="nav_contact">Kontakt</a>
+    </nav>
+    <div class="hdr-r">
+      <div class="langs" id="langs" role="group" aria-label="Jezik"></div>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Izbornik"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="sec" id="proizvodi">
+  <div class="sec-in">
+    <p class="kicker" data-t="prod_k">Proizvodi</p>
+    <div class="sec-head">
+      <h1 class="h2" data-t="prod_h">Iz naše ponude</h1>
+      <p class="sec-lead" data-t="prod_lead">Nove glave motora, turbine, racing ležajevi i čahure dizni. Za dostupnost i cijenu javite nam se.</p>
+    </div>
+    <div id="products"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="ftr-in">
+    <img src="slike/logo.jpg" alt="TTM Engines" width="198" height="92">
+    <div class="ftr-txt">
+      <p><b>TTM Strojna obrada d.o.o.</b> · <span data-t="ftr_what">za strojnu obradu metala i dijelova motora</span></p>
+      <p>Gornji Jugi 44/2, 51216 Viškovo · OIB 79280396578 · <span data-t="ftr_court">Trgovački sud u Rijeci, MBS 040219934</span></p>
+      <p>© <span id="year">2026</span> TTM Strojna obrada d.o.o. <span data-t="ftr_rights">Sva prava pridržana.</span></p>
+    </div>
+    <a href="#top" data-t="ftr_top">Na vrh ↑</a>
+  </div>
+</footer>
+
+<div id="lb" hidden>
+  <button type="button" class="lb-x" aria-label="Zatvori">×</button>
+  <button type="button" class="lb-p" aria-label="Prethodna">‹</button>
+  <img alt="">
+  <button type="button" class="lb-n" aria-label="Sljedeća">›</button>
+  <span class="lb-c"></span>
+</div>
+
+<script src="js/prijevodi.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

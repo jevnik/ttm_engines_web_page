@@ -21,7 +21,6 @@ const K_LANG = "ttm-web-lang";
 /* ----- Jezici ----- */
 const HR = {};
 $$("[data-t]").forEach(el => { HR[el.dataset.t] = el.hasAttribute("data-html") ? el.innerHTML : el.textContent; });
-HR._title = document.title;
 HR._desc = $('meta[name="description"]').content;
 
 function tr(lang, key) { return (T[lang] && T[lang][key]) || HR[key] || ""; }
@@ -33,7 +32,6 @@ function setLang(lang) {
     const v = tr(lang, el.dataset.t);
     if (el.hasAttribute("data-html")) el.innerHTML = v; else el.textContent = v;
   });
-  document.title = tr(lang, "_title");
   $('meta[name="description"]').content = tr(lang, "_desc");
   $$("#langs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
   try { localStorage.setItem(K_LANG, lang); } catch (e) {}
@@ -44,12 +42,12 @@ $("#langs").innerHTML = LANGS.map(l =>
 $("#langs").addEventListener("click", e => { const b = e.target.closest("button"); if (b) setLang(b.dataset.lang); });
 
 /* ----- Hero slika ----- */
-if (CONFIG.heroImage) $(".hero-bg").style.setProperty("--hero-img", `url("${new URL(CONFIG.heroImage, location.href).href}")`);
+if (CONFIG.heroImage && $(".hero-bg")) $(".hero-bg").style.setProperty("--hero-img", `url("${new URL(CONFIG.heroImage, location.href).href}")`);
 
 /* ----- Proizvodi ----- */
 const P_TITLE = { pr1: "Nove glave motora", pr2: "Nove turbine", pr3: "Racing ležajevi", pr4: "Čahure dizni" };
 Object.assign(HR, P_TITLE);
-$("#products").innerHTML = CONFIG.products.map((p, gi) => {
+if ($("#products")) $("#products").innerHTML = CONFIG.products.map((p, gi) => {
   const more = p.imgs.length - p.show;
   return `<div class="pgroup"><h3 data-t="${p.t}">${P_TITLE[p.t]}</h3><div class="pgrid">` +
     p.imgs.slice(0, p.show).map((n, i) =>
@@ -59,13 +57,15 @@ $("#products").innerHTML = CONFIG.products.map((p, gi) => {
 }).join("");
 
 /* ----- Galerija ----- */
-$("#gallery").innerHTML = CONFIG.gallery.map((src, i) =>
+if ($("#gallery")) $("#gallery").innerHTML = CONFIG.gallery.map((src, i) =>
   `<button type="button" data-g="gal" data-i="${i}"><img src="${src}" alt="" loading="lazy"></button>`).join("");
 
 /* ----- Povećanje slike s listanjem ----- */
 const SETS = { gal: CONFIG.gallery };
 CONFIG.products.forEach((p, gi) => { SETS["p" + gi] = p.imgs.map(n => `slike/proizvodi/${n}.jpg`); });
-const lb = $("#lb"), lbImg = lb.querySelector("img");
+const lb = $("#lb");
+if (lb) {
+const lbImg = lb.querySelector("img");
 let cur = null, idx = 0;
 function show(i) {
   const set = SETS[cur]; idx = (i + set.length) % set.length;
@@ -89,6 +89,7 @@ document.addEventListener("keydown", e => {
   if (e.key === "ArrowLeft") show(idx - 1);
   if (e.key === "ArrowRight") show(idx + 1);
 });
+}
 
 /* ----- Izbornik na mobitelu ----- */
 const burger = $("#burger"), menu = $("#menu");
@@ -99,15 +100,6 @@ burger.addEventListener("click", () => {
 menu.addEventListener("click", e => {
   if (e.target.closest("a")) { burger.setAttribute("aria-expanded", "false"); menu.classList.remove("open"); }
 });
-
-/* ----- Označi aktivnu sekciju u izborniku ----- */
-const links = $$(".menu a");
-const io = new IntersectionObserver(entries => {
-  entries.forEach(en => {
-    if (en.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id));
-  });
-}, { rootMargin: "-45% 0px -50% 0px" });
-links.forEach(a => { const s = $(a.getAttribute("href")); if (s) io.observe(s); });
 
 $("#year").textContent = new Date().getFullYear();
 

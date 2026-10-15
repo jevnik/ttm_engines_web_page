@@ -13,10 +13,12 @@ const LANGS = [
 
 const T = {
   en: {
-    _title: "TTM Engines · Engine machining and motorsport",
+    title_home: "TTM Engines · Engine machining and motorsport", title_mach: "Our machines · TTM Engines", title_serv: "Services · TTM Engines", title_prod: "Products · TTM Engines", title_about: "About us · TTM Engines", title_con: "Contact · TTM Engines",
+    home_mach: "Specialised machines for heads, blocks, crankshafts and connecting rods in our own workshop.", home_mach_go: "See the machines →", home_more: "Learn more →",
+    home_serv: "Engine parts machining, engine building and motorsport consulting.", home_prod: "New cylinder heads, turbochargers, racing bearings and injector sleeves.", home_about: "Over 20 years of experience in Viškovo. Gallery of our workshop.",
     _desc: "TTM Engines (TTM Strojna obrada d.o.o., Viškovo, Croatia): engine parts machining, engine building and motorsport consulting. Over 20 years of experience.",
     skip: "Skip to content",
-    nav_machines: "Machines", nav_services: "Services", nav_products: "Products", nav_about: "About", nav_gallery: "Gallery", nav_contact: "Contact",
+    nav_home: "Home", nav_machines: "Machines", nav_services: "Services", nav_products: "Products", nav_about: "About", nav_gallery: "Gallery", nav_contact: "Contact",
     hero_eyebrow: "Machining · Engine building · Motorsport",
     hero_title: "Precision<br>that drives <em>engines</em>.",
     hero_lead: "We machine cylinder heads, blocks, crankshafts and connecting rods on equipment few workshops in the region have. We build engines for road and track and advise racing teams.",
@@ -63,10 +65,12 @@ const T = {
     ftr_rights: "All rights reserved.", ftr_top: "Back to top ↑"
   },
   it: {
-    _title: "TTM Engines · Lavorazioni meccaniche di motori e motorsport",
+    title_home: "TTM Engines · Lavorazioni meccaniche di motori e motorsport", title_mach: "I nostri macchinari · TTM Engines", title_serv: "Servizi · TTM Engines", title_prod: "Prodotti · TTM Engines", title_about: "Chi siamo · TTM Engines", title_con: "Contatti · TTM Engines",
+    home_mach: "Macchinari specializzati per testate, basamenti, alberi motore e bielle nella nostra officina.", home_mach_go: "Scopri i macchinari →", home_more: "Scopri di più →",
+    home_serv: "Lavorazione di parti motore, assemblaggio motori e consulenza motorsport.", home_prod: "Testate nuove, turbocompressori, bronzine racing e boccole iniettori.", home_about: "Oltre 20 anni di esperienza a Viškovo. Galleria della nostra officina.",
     _desc: "TTM Engines (TTM Strojna obrada d.o.o., Viškovo, Croazia): lavorazione di parti motore, assemblaggio motori e consulenza motorsport. Oltre 20 anni di esperienza.",
     skip: "Vai al contenuto",
-    nav_machines: "Macchinari", nav_services: "Servizi", nav_products: "Prodotti", nav_about: "Chi siamo", nav_gallery: "Galleria", nav_contact: "Contatti",
+    nav_home: "Home", nav_machines: "Macchinari", nav_services: "Servizi", nav_products: "Prodotti", nav_about: "Chi siamo", nav_gallery: "Galleria", nav_contact: "Contatti",
     hero_eyebrow: "Lavorazioni meccaniche · Assemblaggio motori · Motorsport",
     hero_title: "La precisione<br>che muove i <em>motori</em>.",
     hero_lead: "Lavoriamo testate, basamenti, alberi motore e bielle con macchinari che poche officine della regione possiedono. Assembliamo motori per strada e pista e diamo consulenza ai team.",
@@ -113,10 +117,12 @@ const T = {
     ftr_rights: "Tutti i diritti riservati.", ftr_top: "Torna su ↑"
   },
   de: {
-    _title: "TTM Engines · Motorinstandsetzung und Motorsport",
+    title_home: "TTM Engines · Motorinstandsetzung und Motorsport", title_mach: "Unsere Maschinen · TTM Engines", title_serv: "Leistungen · TTM Engines", title_prod: "Produkte · TTM Engines", title_about: "Über uns · TTM Engines", title_con: "Kontakt · TTM Engines",
+    home_mach: "Spezialmaschinen für Zylinderköpfe, Blöcke, Kurbelwellen und Pleuel in der eigenen Werkstatt.", home_mach_go: "Maschinen ansehen →", home_more: "Mehr erfahren →",
+    home_serv: "Bearbeitung von Motorteilen, Motorenbau und Motorsportberatung.", home_prod: "Neue Zylinderköpfe, Turbolader, Racing-Lager und Injektorhülsen.", home_about: "Über 20 Jahre Erfahrung in Viškovo. Galerie unserer Werkstatt.",
     _desc: "TTM Engines (TTM Strojna obrada d.o.o., Viškovo, Kroatien): Bearbeitung von Motorteilen, Motorenbau und Motorsportberatung. Über 20 Jahre Erfahrung.",
     skip: "Zum Inhalt springen",
-    nav_machines: "Maschinen", nav_services: "Leistungen", nav_products: "Produkte", nav_about: "Über uns", nav_gallery: "Galerie", nav_contact: "Kontakt",
+    nav_home: "Startseite", nav_machines: "Maschinen", nav_services: "Leistungen", nav_products: "Produkte", nav_about: "Über uns", nav_gallery: "Galerie", nav_contact: "Kontakt",
     hero_eyebrow: "Bearbeitung · Motorenbau · Motorsport",
     hero_title: "Präzision,<br>die <em>Motoren</em> antreibt.",
     hero_lead: "Wir bearbeiten Zylinderköpfe, Motorblöcke, Kurbelwellen und Pleuel auf Maschinen, die kaum eine Werkstatt in der Region hat. Wir bauen Motoren für Straße und Rennstrecke und beraten Rennteams.",
