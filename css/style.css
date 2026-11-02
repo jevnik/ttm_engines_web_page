@@ -345,3 +345,5 @@ body>main{flex:1 0 auto}
 .tile img.logo{object-fit:contain;background:var(--white)}
 @media (max-width:860px){.tiles .tile img.logo{padding:6px;box-sizing:border-box}}
 @media (min-width:861px){.tile-main img{height:auto;min-height:0;aspect-ratio:4/3;align-self:stretch}}
+/* Početna, kontakt traka: na mobitelu telefon, e-mail i radno vrijeme svaki u svom redu */
+@media (max-width:620px){.cstrip p .sep{display:none}.cstrip p>a,.cstrip p>span{display:block}}
