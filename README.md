@@ -5,12 +5,12 @@ Statična stranica (HTML + CSS + JS, bez builda). Otvara se dvoklikom na `index.
 ## Datoteke
 - Stranice (hrvatski tekst je u njima):
   - `index.html` – početna: kratki pregled s poveznicama na ostale stranice
-  - `strojevi.html` – Naši strojevi
-  - `usluge.html` – Usluge i Kako radimo
+  - `strojevi.html` – Strojevi i usluge (strojevi, usluge i Kako radimo na jednoj stranici)
+  - `usluge.html` – samo preusmjerava na `strojevi.html#usluge` (da stari linkovi rade)
   - `proizvodi.html` – Proizvodi (samo slike)
   - `o-nama.html` – O nama i galerija
   - `kontakt.html` – Kontakt
-- Zaglavlje (izbornik) i podnožje su kopirani u svaku stranicu: ako ih mijenjate, promijenite ih u svih šest datoteka.
+- Zaglavlje (izbornik) i podnožje su kopirani u svaku stranicu: ako ih mijenjate, promijenite ih u svih pet stranica.
 - `css/style.css` – izgled; boje i fontovi su na vrhu (`--blue`, `--navy`, `--yellow`), preuzeti iz logotipa i obrasca
 - `js/prijevodi.js` – jezici (`LANGS`) i prijevodi EN/IT/DE (`T`), isti ključevi kao `data-t` u stranicama; naslovi kartica su ključevi `title_*`
 - `js/main.js` – `CONFIG` na vrhu: hero fotografija, popis slika galerije i proizvoda
