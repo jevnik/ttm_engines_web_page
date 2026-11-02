@@ -326,3 +326,4 @@ body>main{flex:1 0 auto}
 .mach.zoom{cursor:zoom-in}
 .mach.zoom:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
 #lb.big img{height:min(82vh,900px);width:auto;max-width:100%;background:none;box-shadow:none}
+@media (min-width:961px){.cards{grid-template-columns:repeat(6,1fr)}.cards>.card{grid-column:span 2}.cards>.card-hi{grid-column:span 3}}
