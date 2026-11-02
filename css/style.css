@@ -341,3 +341,7 @@ body>main{flex:1 0 auto}
 .feat p{font-size:1.08rem;line-height:1.6}
 .sub-h{font-style:italic;font-weight:700;text-transform:uppercase;font-size:clamp(1.3rem,2.2vw,1.7rem);color:var(--navy);margin:0 0 18px;display:flex;align-items:center;gap:14px}
 .sub-h::after{content:"";flex:1;height:1px;background:var(--line)}
+/* Početna: logo umjesto fotografije u kartici Proizvodi */
+.tile img.logo{object-fit:contain;background:var(--white);padding:clamp(20px,4vw,40px);box-sizing:border-box}
+@media (max-width:620px){.tiles .tile img.logo{padding:10px}}
+@media (min-width:861px){.tile-main img{height:auto;min-height:0;aspect-ratio:4/3;align-self:stretch}}
