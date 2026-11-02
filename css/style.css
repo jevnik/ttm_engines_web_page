@@ -326,4 +326,10 @@ body>main{flex:1 0 auto}
 .mach.zoom{cursor:zoom-in}
 .mach.zoom:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
 #lb.big img{height:min(82vh,900px);width:auto;max-width:100%;background:none;box-shadow:none}
-@media (min-width:961px){.cards{grid-template-columns:repeat(6,1fr)}.cards>.card{grid-column:span 2}.cards>.card-hi{grid-column:span 3}}
+/* Usluge: istaknute usluge u jednoj traci iznad kategorija */
+.feat{display:grid;grid-template-columns:1fr 1fr;background:var(--navy);border-top:4px solid var(--yellow);border-radius:2px;margin-bottom:22px}
+.feat>div{padding:28px 30px}
+.feat>div+div{border-left:1px solid rgba(255,255,255,.14)}
+.feat h3{color:var(--white);margin-bottom:6px}
+.feat p{margin:0;color:#C9D6E4}
+@media (max-width:620px){.feat{grid-template-columns:1fr;margin-bottom:12px}.feat>div{padding:20px}.feat>div+div{border-left:0;border-top:1px solid rgba(255,255,255,.14)}}
