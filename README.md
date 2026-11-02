@@ -18,7 +18,7 @@ Statična stranica (HTML + CSS + JS, bez builda). Otvara se dvoklikom na `index.
 
 ## Česte izmjene
 - **Tekst**: promijenite hrvatski u odgovarajućoj `.html` stranici, a isti ključ u `js/prijevodi.js` za ostale jezike.
-- **Galerija**: stavite sliku u `slike/galerija/` (oko 1200 px širine) i dodajte red u `CONFIG.gallery`.
+- **Galerija**: veliku sliku (do 1600 px) stavite u `slike/galerija/`, malu istog imena (do 600 px) u `slike/galerija/male/`, i dodajte ime bez `.jpg` u `CONFIG.gallery`.
 - **Hero fotografija**: `CONFIG.heroImage = "slike/hero.jpg"` (oko 2000 px širine).
 - Žuto označeni tekstovi (klasa `todo`) čekaju sadržaj sa starog weba; obrišite oznaku kad je tekst pravi.
 

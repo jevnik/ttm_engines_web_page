@@ -2,9 +2,8 @@
 const CONFIG = {
   // Velika fotografija iza naslova (prazno = tamna pozadina bez slike)
   heroImage: "slike/hero.jpg",
-  // Galerija: datoteke u slike/galerija/
-  gallery: ["1-1", "7", "5", "10", "2-1", "3-1", "4-1", "6", "8", "9", "11", "12", "13", "14", "15", "17", "19", "20"]
-    .map(n => "slike/galerija/" + n + ".jpg"),
+  // Galerija: velike slike u slike/galerija/, male (do 600 px) istog imena u slike/galerija/male/
+  gallery: ["2", "3", "20260707_160153", "20260706_185405", "20260623_131040", "20260528_161532", "20260528_161521", "20260518_154528", "20260417_222308", "20260207_165804", "20260207_165734", "20260207_165704", "20260207_164449", "20251220_110148", "20251220_110133", "20251220_094635", "20251220_082528", "20251202_131143", "20250624_142551", "20250414_103027", "20250217_160535", "20250217_160525", "20250113_153512", "20250113_153455", "20241209_131138", "20241128_084946", "20241126_123512", "20241112_165703", "20241112_165659", "20240930_171230", "20240901_173056", "20240713_121436", "20240713_121430", "20240713_113811", "20240702_083707", "20240412_133123", "20240221_151825", "20240221_151821", "20240221_092201", "1-1", "3-1", "4-1"],
   // Proizvodi: naslov (ključ prijevoda) i slike u slike/proizvodi/. Prikazuje se prvih "show" slika, ostale u povećanju.
   products: [
     { t: "pr1", show: 7, imgs: ["glava4-4","glava1-1","glava2-3","glava3-4","glava4-2","glava5-2","glava6-1","glava1-2","glava1-3","glava1-4","glava2-1","glava2-2","glava2-4","glava2-5","glava2-6","glava3-1","glava3-2","glava3-3","glava3-5","glava4-1","glava4-3","glava4-5","glava4-6","glava4-7","glava5-1","glava5-3","glava5-4","glava5-5","glava5-6","glava6-2","glava6-3","glava6-4","glava6-5","glava6-6","glava6-7"] },
@@ -57,11 +56,11 @@ if ($("#products")) $("#products").innerHTML = CONFIG.products.map((p, gi) => {
 }).join("");
 
 /* ----- Galerija ----- */
-if ($("#gallery")) $("#gallery").innerHTML = CONFIG.gallery.map((src, i) =>
-  `<button type="button" data-g="gal" data-i="${i}"><img src="${src}" alt="" loading="lazy"></button>`).join("");
+if ($("#gallery")) $("#gallery").innerHTML = CONFIG.gallery.map((n, i) =>
+  `<button type="button" data-g="gal" data-i="${i}"><img src="slike/galerija/male/${n}.jpg" alt="" loading="lazy"></button>`).join("");
 
 /* ----- Povećanje slike s listanjem ----- */
-const SETS = { gal: CONFIG.gallery };
+const SETS = { gal: CONFIG.gallery.map(n => `slike/galerija/${n}.jpg`) };
 CONFIG.products.forEach((p, gi) => { SETS["p" + gi] = p.imgs.map(n => `slike/proizvodi/${n}.jpg`); });
 const lb = $("#lb");
 if (lb) {
