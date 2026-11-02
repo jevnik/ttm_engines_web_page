@@ -101,7 +101,7 @@ menu.addEventListener("click", e => {
   if (e.target.closest("a")) { burger.setAttribute("aria-expanded", "false"); menu.classList.remove("open"); }
 });
 
-$("#year").textContent = new Date().getFullYear();
+const yr = $("#year"); if (yr) yr.textContent = new Date().getFullYear();
 
 let start = "hr";
 try { start = localStorage.getItem(K_LANG) || "hr"; } catch (e) {}

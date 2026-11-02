@@ -59,7 +59,7 @@ const T = {
     about_p2: "We approach every job with special care. Our highly skilled staff are ready to answer any question and solve your problem as quickly as possible. Trust us and together we will find the best solution.",
     gal_k: "Gallery", gal_h: "From our workshop",
     con_k: "Contact", con_h: "Let's talk about your engine",
-    con_addr: "Address", con_shop: "Workshop", con_office: "Office", con_hours: "Opening hours", con_hours_v: "Mon – Fri, 08:00 – 17:00",
+    con_addr: "Address", con_shop: "Workshop", con_office: "Office", con_hours: "Opening hours", con_hours_v: "Mon – Fri, 08:00 – 16:00",
     con_map: "Open in Google Maps →",
     ftr_what: "machining of metal and engine parts", ftr_court: "Commercial Court in Rijeka, MBS 040219934",
     ftr_rights: "All rights reserved.", ftr_top: "Back to top ↑"
@@ -111,7 +111,7 @@ const T = {
     about_p2: "Affrontiamo ogni lavoro con cura particolare. I nostri specialisti sono pronti a rispondere a ogni domanda e a risolvere il problema nel minor tempo possibile. Affidati a noi e troveremo insieme la soluzione migliore.",
     gal_k: "Galleria", gal_h: "Dalla nostra officina",
     con_k: "Contatti", con_h: "Parliamo del tuo motore",
-    con_addr: "Indirizzo", con_shop: "Officina", con_office: "Ufficio", con_hours: "Orari", con_hours_v: "Lun – Ven, 08:00 – 17:00",
+    con_addr: "Indirizzo", con_shop: "Officina", con_office: "Ufficio", con_hours: "Orari", con_hours_v: "Lun – Ven, 08:00 – 16:00",
     con_map: "Apri in Google Maps →",
     ftr_what: "lavorazioni meccaniche di metalli e parti motore", ftr_court: "Tribunale commerciale di Rijeka, MBS 040219934",
     ftr_rights: "Tutti i diritti riservati.", ftr_top: "Torna su ↑"
@@ -163,7 +163,7 @@ const T = {
     about_p2: "Wir gehen jeden Auftrag mit besonderer Sorgfalt an. Unsere Fachleute beantworten jede Frage und lösen Ihr Problem so schnell wie möglich. Vertrauen Sie uns, gemeinsam finden wir die beste Lösung.",
     gal_k: "Galerie", gal_h: "Aus unserer Werkstatt",
     con_k: "Kontakt", con_h: "Sprechen wir über Ihren Motor",
-    con_addr: "Adresse", con_shop: "Werkstatt", con_office: "Büro", con_hours: "Öffnungszeiten", con_hours_v: "Mo – Fr, 08:00 – 17:00",
+    con_addr: "Adresse", con_shop: "Werkstatt", con_office: "Büro", con_hours: "Öffnungszeiten", con_hours_v: "Mo – Fr, 08:00 – 16:00",
     con_map: "In Google Maps öffnen →",
     ftr_what: "Bearbeitung von Metall und Motorteilen", ftr_court: "Handelsgericht Rijeka, MBS 040219934",
     ftr_rights: "Alle Rechte vorbehalten.", ftr_top: "Nach oben ↑"

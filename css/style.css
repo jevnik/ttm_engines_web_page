@@ -294,3 +294,7 @@ dd.todo{margin:0;justify-self:start}
   .steps li{display:grid;grid-template-columns:52px 1fr;column-gap:10px}
   .steps .num{grid-row:span 2;font-size:2.4rem;margin:0}
 }
+.soc-l{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none}
+.cinfo .soc-l{color:var(--blue);text-decoration:none}
+.cinfo .soc-l:hover{text-decoration:underline}
+.soc{width:20px;height:20px;flex:none}
