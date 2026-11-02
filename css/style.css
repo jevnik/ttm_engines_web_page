@@ -298,3 +298,4 @@ dd.todo{margin:0;justify-self:start}
 .cinfo .soc-l{color:var(--blue);text-decoration:none}
 .cinfo .soc-l:hover{text-decoration:underline}
 .soc{width:20px;height:20px;flex:none}
+.cinfo .soc-row{grid-column:1/-1}
