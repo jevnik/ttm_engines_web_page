@@ -299,3 +299,6 @@ dd.todo{margin:0;justify-self:start}
 .cinfo .soc-l:hover{text-decoration:underline}
 .soc{width:20px;height:20px;flex:none}
 .cinfo .soc-row{grid-column:1/-1}
+/* podnožje uvijek na dnu prozora kad je sadržaja malo */
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+body>main{flex:1 0 auto}
