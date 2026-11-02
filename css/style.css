@@ -323,3 +323,6 @@ body>main{flex:1 0 auto}
 .mvid{margin-top:12px;display:inline-flex;align-items:center;gap:6px;font:600 .95rem var(--body);color:var(--blue);background:none;border:1px solid var(--blue);border-radius:2px;padding:7px 12px;cursor:pointer}
 .mvid:hover{background:var(--blue);color:var(--white)}
 .mach h3,.mach p{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.mach.zoom{cursor:zoom-in}
+.mach.zoom:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+#lb.big img{height:min(82vh,900px);width:auto;max-width:100%;background:none;box-shadow:none}

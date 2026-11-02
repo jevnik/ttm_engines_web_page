@@ -61,6 +61,14 @@ if ($("#gallery")) $("#gallery").innerHTML = CONFIG.gallery.map((n, i) =>
 
 /* ----- Povećanje slike s listanjem ----- */
 const SETS = { gal: CONFIG.gallery.map(n => `slike/galerija/${n}.jpg`) };
+/* Kartice strojeva: klik na karticu otvara sliku u povećanju */
+const machImgs = [...document.querySelectorAll(".mach .mmedia img")];
+SETS.mach = machImgs.map(i => i.getAttribute("src"));
+machImgs.forEach((img, i) => {
+  const card = img.closest(".mach");
+  card.classList.add("zoom"); card.tabIndex = 0; card.setAttribute("role", "button");
+  card.dataset.g = "mach"; card.dataset.i = i;
+});
 CONFIG.products.forEach((p, gi) => { SETS["p" + gi] = p.imgs.map(n => `slike/proizvodi/${n}.jpg`); });
 const lb = $("#lb");
 if (lb) {
@@ -73,9 +81,17 @@ function show(i) {
   lb.classList.toggle("single", set.length < 2);
 }
 document.addEventListener("click", e => {
-  const b = e.target.closest("button[data-g]"); if (!b) return;
-  cur = b.dataset.g; show(+b.dataset.i); lb.hidden = false; lb.querySelector(".lb-x").focus();
+  const b = e.target.closest("button[data-g], .mach[data-g]"); if (!b || e.target.closest(".mvid")) return;
+  open(b);
 });
+document.addEventListener("keydown", e => {
+  const b = e.target.closest && e.target.closest(".mach[data-g]");
+  if (b && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); open(b); }
+});
+function open(b) {
+  cur = b.dataset.g; lb.classList.toggle("big", cur === "mach");
+  show(+b.dataset.i); lb.hidden = false; lb.querySelector(".lb-x").focus();
+}
 lb.addEventListener("click", e => {
   if (e.target.closest(".lb-p")) return show(idx - 1);
   if (e.target.closest(".lb-n")) return show(idx + 1);
