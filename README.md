@@ -5,7 +5,7 @@ Statična stranica (HTML + CSS + JS, bez builda). Otvara se dvoklikom na `index.
 ## Datoteke
 - Stranice (hrvatski tekst je u njima):
   - `index.html` – početna: kratki pregled s poveznicama na ostale stranice
-  - `strojevi.html` – Strojevi i usluge (strojevi, usluge i Kako radimo na jednoj stranici)
+  - `strojevi.html` – Naše usluge (strojevi, usluge i Kako radimo na jednoj stranici)
   - `usluge.html` – samo preusmjerava na `strojevi.html#usluge` (da stari linkovi rade)
   - `proizvodi.html` – Proizvodi (samo slike)
   - `o-nama.html` – O nama i galerija
