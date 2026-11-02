@@ -90,6 +90,14 @@ document.addEventListener("keydown", e => {
 });
 }
 
+/* ----- Video stroja: učita se tek na klik ----- */
+document.addEventListener("click", e => {
+  const b = e.target.closest("button.mvid"); if (!b) return;
+  const media = b.closest(".mach").querySelector(".mmedia");
+  media.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.yt}?autoplay=1&rel=0" title="Video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+  b.remove();
+});
+
 /* ----- Izbornik na mobitelu ----- */
 const burger = $("#burger"), menu = $("#menu");
 burger.addEventListener("click", () => {
