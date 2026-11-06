@@ -26,7 +26,7 @@ const T = {
     p1_d: "years of experience in engine machining",
     p3_t: "Leading workshop", p3_d: "for engine machining in the region",
     mach_k: "Our machines", mach_h: "The equipment that sets us apart",
-    mach_lead: "Specialised engine machining equipment lets us do the work in our own workshop, quickly and to the tolerances a racing engine demands.",
+    mach_lead: "Specialised engine machining equipment enables us to do the work in our own workshop, quickly and to the tolerances a racing engine demands.",
     m1_t: "CNC cylinder head porting", m1_d: "Rottler EM69P: CNC machining of intake and exhaust ports for better flow and more power.", m_video: "Watch the video",
     m2_t: "CNC valve seat machining", m2_d: "Newen Contour-BB: CNC valve seat machining with a single profile tool for exact geometry and a perfect seal.",
     m3_t: "CNC honing machine", m3_d: "Rottler H85A: CNC cylinder honing to exact size and surface finish.",
